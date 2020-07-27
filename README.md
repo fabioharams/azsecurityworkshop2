@@ -35,5 +35,83 @@ If you need more information about this procedure please follow [this link](http
 
 Wait few minutes and your AKS Cluster will be finished. 
 
+> 2. Install admin tools
+
+Now you can install de admin tools and get the credentials to manage AKS
+
+```
+az aks install-cli
+```
+
+Get the credentials using the command:
+
+```
+az aks get-credentials --resource-group LABSECURITY --name SECURITYAKSDEMO
+```
+
+Done! you can check if you can manage the AKS cluster using some commands like:
+
+```
+ kubectl get node
+ kubectl get pod
+ kubectl cluster-info
+ ```
+
+ > 2. Create ACR
+
+ Use this command to create Azure Container Registry )ACR):
+
+```
+az acr create --resource-group LABSECURITY --name acrlabsecurity --sku Standard
+```
+> Note: try to use a unique name for --name parameter
+
+After executing this command take note of the parameter **loginServer**. Will be something like acrname.azurecr.io
+
+> Before proceding you need to install a Docker client on your computer in order to upload images.
+>  
+> Link: https://docs.docker.com/docker-for-windows/install/
+
+
+- Log in to registry
+
+```
+az acr login --name acrlabsecurity.azurecr.io
+```
+
+- Push image to registry
+
+Publish these 2 images to ACR. Also you can push another public image.
+
+```
+docker pull hello-world
+docker tag hello-world acrlabsecurity.azurecr.io/hello-world:v1
+docker push acrlabsecurity.azurecr.io/hello-world:v1
+docker rmi acrlabsecurity.azurecr.io/hello-world:v1
+```
+
+
+
+
+```
+docker pull nginx
+docker tag nginx acrlabsecurity.azurecr.io/nginx:v1
+docker push acrlabsecurity.azurecr.io/nginx:v1
+```
+
+- List container images
+
+```
+az acr repository list --name acrlabsecurity --output table
+```
+
+
+
+
+
+
+
+
+
 
 
