@@ -1,2 +1,4 @@
-# azsecurityworkshop2
-Azure Security Workshop - part 2 - AKS &amp; ACR
+# Azure Security Workshop | Part 2
+This second part will focus on containers (Azure Kubernetes Service and Azure Container Registry) protected by Azure Security Center
+
+
