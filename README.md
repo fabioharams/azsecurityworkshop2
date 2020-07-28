@@ -124,15 +124,15 @@ Check if Azure Security Center is monitoring containers. To do that just click o
 
 - Open Azure Portal and then type **Azure Security Center** on **Search** bar. Click on **Security Center**. Click on **Coverage** under **Policy & Compliance**. 
 
-[img9](/img/img9.png)
+![img9](/img/img9.png)
 
 - CLick on **Edit plan**
 
-[img10](/img/img10.png)
+![img10](/img/img10.png)
 
 - Check if **Kubernetes Services** and **Container Registries** are both enabled
 
-[img11](/img/img11.png)
+![img11](/img/img11.png)
 
 
 
