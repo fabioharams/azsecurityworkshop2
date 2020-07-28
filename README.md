@@ -147,6 +147,21 @@ You can also open the Azure Portal and check the ACR.
 ![img6](/img/img6.png)
 
 
+> 4. Security recommendations on AKS
+
+- Open **Azure Security Center** , click on **Compute & Apps** under **RESOURCE SECURITY HYGIENE** and then click on **securityaksdemo**.
+
+![img7](/img/img7.png)
+
+- You can see the security recommendations for AKS Cluster
+
+![img8](/img/img8.png)
+
+
+
+
+
+
 
 
 
