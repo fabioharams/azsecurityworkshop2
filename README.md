@@ -83,6 +83,7 @@ az acr login --name acrlabsecurity.azurecr.io
 
 Publish these 2 images to ACR. Also you can push another public image.
 
+- - Hello-world
 ```
 docker pull hello-world
 docker tag hello-world acrlabsecurity.azurecr.io/hello-world:v1
@@ -90,20 +91,25 @@ docker push acrlabsecurity.azurecr.io/hello-world:v1
 docker rmi acrlabsecurity.azurecr.io/hello-world:v1
 ```
 
-
+- - Nginx
 
 
 ```
 docker pull nginx
 docker tag nginx acrlabsecurity.azurecr.io/nginx:v1
 docker push acrlabsecurity.azurecr.io/nginx:v1
+docker rmi acrlabsecurity.azurecr.io/nginx:v1
 ```
 
 - List container images
 
+Here you can check if both images (Hello-world and Nginx) are available at ACR.
+
 ```
 az acr repository list --name acrlabsecurity --output table
 ```
+You can also open the Azure Portal and check the ACR.
+
 
 
 
