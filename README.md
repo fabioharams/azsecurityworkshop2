@@ -101,14 +101,14 @@ docker push acrlabsecurity.azurecr.io/hello-world:v1
 docker rmi acrlabsecurity.azurecr.io/hello-world:v1
 ```
 
-- - Nginx
+- - Wordpress:4.6.0
 
 
 ```
-docker pull nginx
-docker tag nginx acrlabsecurity.azurecr.io/nginx:v1
-docker push acrlabsecurity.azurecr.io/nginx:v1
-docker rmi acrlabsecurity.azurecr.io/nginx:v1
+docker pull wordpress:4.6.0
+docker tag nginx acrlabsecurity.azurecr.io/wordpress:4.6.0
+docker push acrlabsecurity.azurecr.io/wordpress:4.6.0
+docker rmi acrlabsecurity.azurecr.io/wordpress:4.6.0
 ```
 
 - List container images
@@ -121,6 +121,34 @@ az acr repository list --name acrlabsecurity --output table
 You can also open the Azure Portal and check the ACR.
 
 > 3. Detecting vulnerabilities on ACR using Azure Security Center
+
+- Open Azure Portal and then type **Azure Security Center** on **Search** bar. Click on **Security Center**. 
+
+![img1](/img/1.png)
+
+- Click on **Compute & Apps** on **RESOURCE SECURITY HYGIENE**
+
+![img2](/img/2.png)
+
+- Click on **Containers**
+
+![img3](/img/3.png)
+
+- You will see both **acrlabsecurity** and **securityaksdemo**. Click on **acrlabsecurity**.
+
+![img4](/img/4.png)
+
+- Click on **Recomendation** section
+
+![img5](/img/5.png)
+
+- You can see here all the vulnerabilities detected by **Qualys Scanner**
+
+![img6](/img/6.png)
+
+
+
+
 
 
 
