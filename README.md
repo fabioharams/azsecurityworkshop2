@@ -124,27 +124,27 @@ You can also open the Azure Portal and check the ACR.
 
 - Open Azure Portal and then type **Azure Security Center** on **Search** bar. Click on **Security Center**. 
 
-![img1](/img/1.png)
+![img1](/img/img1.png)
 
 - Click on **Compute & Apps** on **RESOURCE SECURITY HYGIENE**
 
-![img2](/img/2.png)
+![img2](/img/img2.png)
 
 - Click on **Containers**
 
-![img3](/img/3.png)
+![img3](/img/img3.png)
 
 - You will see both **acrlabsecurity** and **securityaksdemo**. Click on **acrlabsecurity**.
 
-![img4](/img/4.png)
+![img4](/img/img4.png)
 
 - Click on **Recomendation** section
 
-![img5](/img/5.png)
+![img5](/img/img5.png)
 
 - You can see here all the vulnerabilities detected by **Qualys Scanner**
 
-![img6](/img/6.png)
+![img6](/img/img6.png)
 
 
 
