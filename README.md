@@ -3,6 +3,16 @@ This second part will focus on containers (Azure Kubernetes Service and Azure Co
 
 > Note: You will need to deploy the first part of this workshop. Link available here: https://github.com/fabioharams/azsecurityworkshop2
 
+## Azure Kubernetes Service | AKS ##
+Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS reduces the complexity and operational overhead of managing Kubernetes by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. The Kubernetes masters are managed by Azure. You only manage and maintain the agent nodes. As a managed Kubernetes service, AKS is free - you only pay for the agent nodes within your clusters, not for the masters.
+
+link: https://azure.microsoft.com/en-us/services/kubernetes-service/#overview
+
+## Azure Container Registry | ACR ##
+Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments.
+
+link: https://azure.microsoft.com/en-us/services/container-registry/
+
 
 > 1. Create AKS Cluster
 
@@ -110,8 +120,7 @@ az acr repository list --name acrlabsecurity --output table
 ```
 You can also open the Azure Portal and check the ACR.
 
-
-
+> 3. Detecting vulnerabilities on ACR using Azure Security Center
 
 
 
