@@ -122,9 +122,6 @@ You can also open the Azure Portal and check the ACR.
 
 Check if Azure Security Center is monitoring containers. To do that just click on **Azure Security Center**, 
 
-
-> 3. Detecting vulnerabilities on ACR using Azure Security Center
-
 - Open Azure Portal and then type **Azure Security Center** on **Search** bar. Click on **Security Center**. Click on **Coverage** under **Policy & Compliance**. 
 
 [img9](/img/img9.png)
@@ -136,6 +133,10 @@ Check if Azure Security Center is monitoring containers. To do that just click o
 - Check if **Kubernetes Services** and **Container Registries** are both enabled
 
 [img11](/img/img11.png)
+
+
+
+> 3. Detecting vulnerabilities on ACR using Azure Security Center
 
 
 
